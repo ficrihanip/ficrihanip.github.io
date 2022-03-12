@@ -1,0 +1,258 @@
+/* universal */
+.section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display-1,
+.display-2,
+.display-3 {
+    color: white;
+}
+
+.display-1,
+.display-3 {
+    font-size: 1rem;
+}
+
+.display-2 {
+    font-size: 3rem;
+}
+
+.display-3 {
+    text-align: justify;
+}
+
+.display-1::before {
+    content: "";
+    top: -.2rem;
+    position: relative;
+    display: inline-block;
+    height: .2rem;
+    width: 1.2rem;
+    background-color: white;
+}
+
+.profil,
+.sertif,
+.kontak {
+    background-color: rgba(39, 48, 54, 1);
+}
+
+.pendidikan .display-1,
+.galeri .display-1 {
+    color: rgba(39, 48, 54, 1);
+}
+
+.pendidikan .display-1::before,
+.galeri .display-1::before {
+    background-color: rgba(39, 48, 54, 1);
+}
+
+/* end-universal */
+/* navbar */
+.navbar-custom {
+    color: rgba(39, 48, 54, 1);
+    background-color: #fff;
+    font-family: 'Poppins',
+        sans-serif;
+    font-size: 1rem;
+}
+
+.navbar-custom .navbar-brand {
+    color: rgba(39, 48, 54, 1);
+}
+
+.navbar-custom .logo-web {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(39, 48, 54, 1);
+}
+
+.navbar-custom .navbar-nav .nav-link:hover,
+.navbar-custom .navbar-nav .nav-link.active {
+    color: rgba(39, 48, 54, 1);
+    transition: all ease .9s;
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-nav .nav-link:active {
+    transition: all ease .1s;
+    font-weight: 700;
+    color: rgba(39, 48, 54, .5);
+}
+
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2839, 48, 54, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='4' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+/* end-navbar */
+
+/* profil  */
+.profil .image-profil {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 1rem;
+    filter: grayscale(1);
+}
+
+/* end-profil  */
+
+/* pendidikan */
+.pendidikan {
+    background-image: url('./asset/image/logo/img_background_pendidikan.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pendidikan .wrapper-list-pendidikan {
+    background-color: rgba(39, 48, 54, .7);
+}
+
+.image-tutwurihandayani {
+    max-width: 200px;
+    width: 100%;
+    vertical-align: center;
+}
+
+.pendidikan .table .sd {
+    background-color: rgba(169, 51, 52, .8);
+}
+
+.pendidikan .table .smp {
+    background-color: rgba(50, 75, 160, .8);
+}
+
+.pendidikan .table .ma {
+    background-color: rgba(77, 108, 38, .8);
+}
+
+.pendidikan .table .st {
+    background-color: rgba(231, 238, 246, .8);
+}
+
+.pendidikan .table .heading {
+    font-size: 3rem;
+}
+
+.pendidikan .table th,
+.pendidikan .table td {
+    vertical-align: middle;
+}
+
+/* end-pendidikan */
+
+/* sertifikasi */
+.sertif .image-sertif {
+    width: 100%;
+}
+
+.accordion-button {
+    color: #fff;
+    background-color: rgba(39, 48, 54, 1);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: rgba(39, 48, 54, .8);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125)
+}
+
+.accordion-button:not(.collapsed)::after,
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.accordion-button:focus {
+    border-color: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .1);
+}
+
+.accordion-item {
+    background-color: #fff;
+}
+
+/* end-sertifikasi */
+/* galeri */
+.galeri .image-galeri {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 1rem;
+}
+
+.galeri .card {
+    background-color: rgba(39, 48, 54, 1);
+    border: 1px solid rgba(39, 48, 54, .5);
+    border-radius: 1rem;
+}
+
+.galeri .card-image {
+    margin: 1rem;
+    background-color: #fff;
+}
+
+@media (max-width: 575.98px) {
+    .galeri .row .col-md-4:nth-child(2) {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* end-galeri */
+
+/* kontak */
+.kontak .wrapper-kontak {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 1rem;
+}
+
+.form-control {
+    font-size: 1.5rem;
+    color: rgba(39, 48, 54, .5);
+    border-radius: .5rem;
+}
+
+.kontak .btn-primary {
+    font-size: .8rem;
+    padding: 1rem 1.5rem;
+    background-color: rgba(255, 255, 255, .5);
+    border: 3px solid rgba(255, 255, 255, .4);
+}
+
+.kontak .btn-primary:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-primary:active:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, .4);
+}
+
+/* end-kontak */
+
+
+/* footer */
+.footer .w-custom {
+    width: 10rem;
+    padding-right: .5rem;
+    margin-bottom: 2rem;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer .fa-brands {
+    font-size: 2rem;
+}
+
+.footer .fa-brands:hover {
+    color: rgba(255, 255, 255, .5);
+    ;
+}
+
+/* end-footer */

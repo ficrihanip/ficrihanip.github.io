@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 1 Bootsrap - Layouting Web</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./asset/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./asset/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./asset/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./asset/favicon/site.webmanifest">
+
+    <!-- cdn font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- cdn font-google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- cdn bootstrap v-5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom-css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- section-1-navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top sticky-sm-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img class="logo-web" src="./asset/image/logo/logo_bangef_circle.svg" alt="logo-web">
+                <span class="fw-bold fs-6">ficrihnp</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav fw-normal">
+                    <a class="nav-link active" href="#profil">Profil</a>
+                    <a class="nav-link" href="#pendidikan">Pendidikan</a>
+                    <a class="nav-link" href="#sertif">Sertifikasi Bootcamp</a>
+                    <a class="nav-link" href="#galeri">Galeri</a>
+                    <a class="nav-link" href="#kontak">Kontak</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- end-section-1-navbar -->
+
+    <!-- section-2-bilboard -->
+    <section>
+        <div class="container">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="100">
+                        <img src="./asset/image/banner/img_banner-1.png" class="d-block w-100" alt="banner-1">
+                        <!-- banner append here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end-section-2-bilboard -->
+
+    <!-- section-3-profil -->
+    <section class="section profil" id="profil">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-xl-5 d-flex flex-column align-self-center">
+                    <span class="display-1 fw-bold mb-4">
+                        Profil 👋
+                    </span>
+                    <span class="display-2 fw-bold mb-4">
+                        Ficri Hanip
+                    </span>
+                    <span class="display-3 lh-base">
+                        Saya adalah mahasiswa teknik informatika disalah satu Sekolah Tinggi di pinggir Jakarta
+                        Selatan perbatasan dengan Depok. Tertarik di banyak bidang teknologi terutama di web
+                        developer.
+                    </span>
+                </div>
+                <div class="col-md-6 col-xl-7 d-flex justify-content-lg-end justify-content-sm-center
+                    justify-content-center mt-4">
+                    <img class="image-profil" src="./asset/image/profil/img_profil.webp" alt="profil_image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="img-fluid" src="./asset/image/logo/wave-down.svg" alt="wave-down">
+    <!-- end-section-3-profil -->
+
+    <!-- section-4-pendidikan -->
+    <section class="section pendidikan" id="pendidikan">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <span class="display-1 fw-bold">
+                        Pendidikan 🏫
+                    </span>
+                </div>
+            </div>
+            <div class="row wrapper-list-pendidikan py-3 rounded-3 shadow-lg mx-1 mx-lg-0 mx-md-0 mx-xl-0 mx-xxl-0">
+                <div class="col-sm-12">
+                    <div class="table-responsive">
+                        <table class="table table-dark mx-auto mb-0">
+                            <thead>
+                                <tr>
+                                    <th colspan="2" class="text-end">
+                                        <img class="image-tutwurihandayani text-end"
+                                            src="./asset/image/pendidikan/img_tutwurihandayani.webp"
+                                            alt="logo_tutwuri_Handayani">
+                                    </th>
+                                    <th colspan="3" class="text-start heading">
+                                        <span>Daftar Riwayat Pendidikan</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th class="text-center">
+                                        Deskripsi
+                                    </th>
+                                    <th class="text-center sd">
+                                        Sekolah dasar
+                                    </th>
+                                    <th class="text-center smp">
+                                        Sekolah Menengah Pertama
+                                    </th>
+                                    <th class="text-center ma">
+                                        Madrasah Aliyah
+                                    </th>
+                                    <th class="text-center st">
+                                        Sekolah Tinggi
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tempat Pendidikan</td>
+                                    <td class="text-center sd">
+                                        SDN Mekarjaya 28
+                                    </td>
+                                    <td class="text-center smp">
+                                        SMPN 4
+                                    </td>
+                                    <td class="text-center ma">
+                                        MAS Nur Al Zahrah
+                                    </td>
+                                    <td class="text-center st">
+                                        STT Terpadu Nurul Fikri
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Alamat Pendidikan</td>
+                                    <td class="text-center sd">
+                                        Depok
+                                    </td>
+                                    <td class="text-center smp">
+                                        Depok
+                                    </td>
+                                    <td class="text-center ma">
+                                        Depok
+                                    </td>
+                                    <td class="text-center st">
+                                        Jakarta
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Status Pendidikan</td>
+                                    <td class="text-center sd">
+                                        Lulus
+                                    </td>
+                                    <td class="text-center smp">
+                                        Lulus
+                                    </td>
+                                    <td class="text-center ma">
+                                        Lulus
+                                    </td>
+                                    <td class="text-center st">
+                                        Belum Lulus
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="img-fluid" src="./asset/image/logo/wave-up.svg" alt="wave-up">
+    <!-- end-section-4-pendidikan -->
+
+    <!-- section-5-sertifikasi -->
+    <section class="section sertif" id="sertif">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <span class="display-1 fw-bold">
+                        Sertifikasi Bootcamp 📝
+                    </span>
+                </div>
+            </div>
+            <!-- sertif append here -->
+        </div>
+    </section>
+    <img class="img-fluid" src="./asset/image/logo/wave-squere-down.svg" alt="image-wave-square-down">
+    <!-- end-section-5-sertifikasi -->
+
+    <!-- section-6-galery -->
+    <section class="section galeri" id="galeri">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <span class="display-1 fw-bold">
+                        Galeri Proyek 📷
+                    </span>
+                </div>
+            </div>
+
+            <div class="row mb-4">
+                <div class="col-md-4 col-sm-4">
+                    <div class="card shadow-lg">
+                        <div class="card-image">
+                            <img src="./asset/image/galeri/web-app-bikin-pass.webp" class="card-img-top img-fluid"
+                                alt="web-app-bikin-pass">
+                        </div>
+                        <div class="card-body text-white">
+                            <h6 class="card-title text-info fw-normal">Web Aplikasi</h6>
+                            <h5 class="card-title fw-bold">Bikinin Password</h5>
+                            <a href="https://bangef.github.io/bikin-password.gihub.io/" target="_blank"
+                                class="text-success text-decoration-none fs-6">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card shadow-lg">
+                        <div class="card-image ">
+                            <img src="./asset/image/galeri/web-app-kalkulator-sederhana.webp"
+                                class="card-img-top img-fluid" alt="web-app-kalkulator-sederhana">
+                        </div>
+                        <div class="card-body text-white">
+                            <h6 class="card-title text-info fw-normal">Web Aplikasi</h6>
+                            <h5 class="card-title fw-bold">Kalkulator Sederhana</h5>
+                            <a href="https://bangef.github.io/calculator-website/" target="_blank"
+                                class="text-success text-decoration-none fs-6">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card shadow-lg">
+                        <div class="card-image">
+                            <img src="./asset/image/galeri/web-app-konverter-suhu.webp" class="card-img-top img-fluid"
+                                alt="/web-app-konverter-suhu">
+                        </div>
+                        <div class="card-body text-white">
+                            <h6 class="card-title text-info fw-normal">Web Aplikasi</h6>
+                            <h5 class="card-title fw-bold">Konverter Suhu</h5>
+                            <a href="https://bangef.github.io/TemperatureChanger.github.io/" target="_blank"
+                                class="text-success text-decoration-none fs-6">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="card shadow-lg">
+                        <div class="card-image">
+                            <img src="./asset/image/galeri/web-app-suwit-jepang.webp" class="card-img-top img-fluid"
+                                alt="web-app-bikin-pass">
+                        </div>
+                        <div class="card-body text-white">
+                            <h6 class="card-title text-info fw-normal">Web Aplikasi</h6>
+                            <h5 class="card-title fw-bold">Suwit Jepang</h5>
+                            <a href="https://bangef.github.io/suwit-jepang.github.io/" target="_blank"
+                                class="text-success text-decoration-none fs-6">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card shadow-lg">
+                        <div class="card-image ">
+                            <img src="./asset/image/galeri/web-landing-page-family-futsal-kbr.webp"
+                                class="card-img-top img-fluid" alt="web-landing-page-family-futsal-kbr">
+                        </div>
+                        <div class="card-body text-white">
+                            <h6 class="card-title text-warning fw-normal">Web Landing Page</h6>
+                            <h5 class="card-title fw-bold">Family Futsal KBR</h5>
+                            <a href="https://bangef.github.io/familyfutsallkbr.github.io/" target="_blank"
+                                class="text-success text-decoration-none fs-6">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                    <div class="card shadow-lg">
+                        <div class="card-image">
+                            <img src="./asset/image/galeri/web-landing-page-gitbeXkelompok6.webp"
+                                class="card-img-top img-fluid" alt="web-landing-page-gitbeXkelompok6">
+                        </div>
+                        <div class="card-body text-white">
+                            <h6 class="card-title text-warning fw-normal">Web Landing Page</h6>
+                            <h5 class="card-title fw-bold">GitbeXKelompok6</h5>
+                            <a href="https://bangef.github.io/gitbeXprogateA6/" target="_blank"
+                                class="text-success text-decoration-none fs-6">Lihat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img class="img-fluid" src="./asset/image/logo/wave-squere-up.svg" alt="image-square-up">
+    <!-- end-section-6-galery -->
+
+    <!-- section-7-contact -->
+    <section class="section kontak" id="kontak">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12">
+                    <span class="display-1 fw-bold">
+                        Kontak 📞
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0 mb-xl-0 mb-xxl-0">
+                    <div class="wrapper-kontak px-4 py-4 mb-4">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold text-white">Nama</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nama">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label fw-bold text-white">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nama@gmail.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label fw-bold text-white">Pesan</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Tulis Pesan"></textarea>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary fw-bold">Kirim ✈️</button>
+                </div>
+                <!-- section-8-footer -->
+                <div class="col-lg-6 footer">
+                    <div class="d-flex justify-content-center">
+                        <img class="logo-web w-custom" src="./asset/image/logo/logo_bangef_circle_white.svg"
+                            alt="logo-web">
+                    </div>
+                    <p class="fw-bold fs-2 text-white">ficrihnp</p>
+                    <p class="fw-light pb-md-3 text-white">Terimakasih sudah berkunjung, mari berteman : </p>
+                    <div class="d-flex justify-content-around py-2">
+                        <a href="https://www.github.com/bangef" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.twitter.com/koderswannabe" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ficrihnp" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- end-section-8-footer-footer -->
+            </div>
+        </div>
+    </section>
+    <!-- end-section-7-contact -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
