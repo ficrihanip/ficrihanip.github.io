@@ -15,6 +15,10 @@ $(document).ready(function () {
 
     let prevScrollPos = 0;
 
+    /**
+     * Navbar :
+     * Untuk mengecek jika scroll layar sebelumnya lebih kecil dari scroll layar sekarang
+     */
     function transition(a) {
         let currentScrollPos = $(window).scrollTop();
         if (prevScrollPos > currentScrollPos) {
@@ -24,9 +28,9 @@ $(document).ready(function () {
         }
         prevScrollPos = currentScrollPos;
     };
+    // event-handler scroll
     $(window).scroll(function () {
         if ($('.navbar-toggler').attr('aria-expanded') === "true") {
-            console.log('1');
             transition('not-show-disabled');
         } else {
             $('.navbar').removeClass('not-show-disabled');
