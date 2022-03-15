@@ -50,8 +50,18 @@
     background-color: rgba(39, 48, 54, 1);
 }
 
-.image-wave {
+.image-wave-for-down {
+    max-width: 2000px;
     width: 100%;
+    position: relative;
+    top: -1px;
+}
+
+.image-wave-for-up {
+    max-width: 2000px;
+    width: 100%;
+    position: relative;
+    bottom: -1px;
 }
 
 /* end-universal */
