@@ -9,6 +9,32 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    $('.navbar-toggler').click(function () {
+        $('.navbar').addClass('not-show-disabled');
+    });
+
+    let prevScrollPos = 0;
+
+    function transition(a) {
+        let currentScrollPos = $(window).scrollTop();
+        if (prevScrollPos > currentScrollPos) {
+            $('.navbar').removeClass(a);
+        } else {
+            $('.navbar').addClass(a);
+        }
+        prevScrollPos = currentScrollPos;
+    };
+    $(window).scroll(function () {
+        if ($('.navbar-toggler').attr('aria-expanded') === "true") {
+            console.log('1');
+            transition('not-show-disabled');
+        } else {
+            $('.navbar').removeClass('not-show-disabled');
+            transition('not-show');
+        }
+    });
+
+
     /**
      * Banner :
      * - Perulangan menambahkan element image banner pada
@@ -62,4 +88,4 @@ $(document).ready(function () {
                 </div>
             </div>`);
     });
-});            
+});
